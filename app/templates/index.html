@@ -1,0 +1,53 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h3>Dashboard</h3><br>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <span class="boxValue"><center>{{data["name"]}}</center></span>
+                    <div><center>Name</center></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <span class="boxValue"><center>{{data["price"]}}</center></span>
+                    <div><center>Price</center></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <span class="boxValue"><center>{{data["1d"]["price_change"]}}</center></span>
+                    <div><center>24 Hour % Change</center></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <span class="boxValue"><center>{{data["7d"]["price_change"]}}</center></span>
+                    <div><center>7 Day % Change</center></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</body>
+</html>
